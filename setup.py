@@ -5,6 +5,10 @@ install_requires = [
     "fastapi[standard]==0.115.12"
 ]
 
+tests_require = [
+    'pytest',
+]
+
 
 setup(
     name='bubblemaps_trending_api',
@@ -16,5 +20,7 @@ setup(
     author='Victor Dehem',
     author_email='dehem.victor.pro@gmail.com',
     description='',
-    install_requires=install_requires
+    install_requires=install_requires,
+    tests_require=tests_require,
+    test_suite="tests"
 )
