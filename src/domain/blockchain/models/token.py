@@ -33,3 +33,4 @@ class TokenSummary(BaseModel):
     largest_pool: Pool
     total_liquidity_usd: float
     number_of_pools: int
+    token: TokenInfo
