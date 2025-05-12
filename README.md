@@ -11,4 +11,4 @@ Architecture diagram: [Link to diagram](https://lucid.app/lucidspark/d43fcdde-91
 
 ## Relevant Endpoints 
 - ```/api/chains/{chain_id: str}/tokens/{token_address:str}```: retrieve token information given the network and token address 
-- ```/api/chains/{chain_id: str}/tokens?addresses={addr1: str, addr2: str ...}```: list tokens information given the network and token addresses 
+- ```/api/chains/{chain_id: str}/tokens?addresses=addr1,addr2```: list tokens information given the network and token addresses 
