@@ -9,7 +9,7 @@ class FakeResponse:
     def raise_for_status(self):
         if self.status_code >= 400:
             raise httpx.HTTPStatusError(
-                "Error", request=None, response=self  # minimal stub
+                "Error", request=None, response=self
             )
 
     def json(self):
