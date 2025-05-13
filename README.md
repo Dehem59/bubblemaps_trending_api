@@ -12,3 +12,13 @@ Architecture diagram: [Link to diagram](https://lucid.app/lucidspark/d43fcdde-91
 ## Relevant Endpoints 
 - ```/api/chains/{chain_id: str}/tokens/{token_address:str}```: retrieve token information given the network and token address 
 - ```/api/chains/{chain_id: str}/tokens?addresses=addr1,addr2```: list tokens information given the network and token addresses 
+
+
+## Local environment setup
+- Run the app:
+  - ``docker build .`` and ``docker run .`` to run local app with docker
+
+- Developer guide:
+  - create venv ``python3 -m venv venv``+ install dependencies ``pip install -e .[tests]``
+  - run local server with ``fastapi dev src/infra/app.py``
+  
